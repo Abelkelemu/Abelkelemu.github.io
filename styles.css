@@ -16,7 +16,6 @@ header{
    background-image: url("./Assets/headerBgImg.jpg") ;
    background-repeat: no-repeat;
    background-size: cover;
-   
    height: 30rem;
 }
 
@@ -40,32 +39,30 @@ header{
     background-color:blanchedalmond;
 }
 
-ul {
+.homeNavs ul {
     margin: 0;
     padding-left: 10rem;
     padding-top: 1.5rem;
 }
 
-li{
+.homeNavs  li{
     list-style-type: none ;
     margin: 2rem;
     padding: 0;
 }
 
-a {
+.homeNavs a {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
     font-size: 1.5rem;
     border: 1px solid blue;
     border-radius: 0.5rem;
-    padding: 0.4rem ;
-    
-    
+    padding: 0.4rem ; 
 }
-a:hover {
+.homeNavs a:hover {
     background-color: white;
-  }
+}
 
 footer{
     height: 14rem;
@@ -77,14 +74,13 @@ footer{
     padding-top: 2rem;
     font-size: 1.7rem;
 }
-.checker{
+/* .checker{
     border: none;
-
-}
-a.checker {
+} */
+/* a.checker {
     background-color:darkgray
     
-}
+} */
 
 .aboutMePage{
     margin: 0;
@@ -92,38 +88,112 @@ a.checker {
     background-color:blanchedalmond;
 }
 
-.happyImg{
-    width: 200px;
-    height: 200px;
-    padding: 3rem;
-    padding-left: 5rem;
-}
-
-.sadImg{
-    width: 200px;
-    height: 200px;
-    padding: 3rem;
-}
-
-.description h1 {
+.aboutMePage h1{
+    color: brown;
     padding-bottom: 2rem;
-    color: blue;
+    font-size: 2.5rem;
 }
+
+.aboutMePage span.miu{
+    color: red;
+}
+
+.description{
+    margin: 2rem;
+    margin-left: 0;
+}
+
 .description p{
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
+    padding-left: 2rem;
+    font-style: italic;
 }
-.listOfClasses h1 {
-    padding-bottom: 2rem;
+
+button a{
+    text-decoration: none;
+    color: darkgoldenrod;
+    background-color: azure;
+    cursor: pointer;
+}
+
+button {
+    font-size: 3rem;
+    border-radius: 1rem;    
+}
+button a:hover{
+    font-size: 3.1rem;
+
 }
 
 
-.funFacts h1 {
-    padding-bottom: 1rem;
-    color: blue;
+
+.listOfClasses{
+    margin: 2rem;
+    margin-left: 0;
 }
-.funFacts p{
+
+.listOfClasses ul{
+    margin: 0;
+    padding-left: 10rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.listOfClasses li{
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.favs{
+    margin: 2rem;
+    margin-left: 0;
+}
+.favs ol{
+    margin: 0;
+    padding-left: 10rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.favs li{
+    padding: 1rem;
+}
+.favs li a{
+    text-decoration: none;
+    
+}
+
+.favs li a:hover{
+    color: red;
+}
+
+
+
+.myMood{
+    margin: 2rem;
+    margin-left: 0;
+    padding-bottom: 4rem;
+}
+.moodImg{
+    width: 20rem;
+    height: 20rem;
+}
+
+.myMood span{
+    font-size: 2rem;
+    margin: 4rem;
+}
+
+.myNeighbor{
+    margin: 2rem;
+    margin-left: 0;
+}
+
+.myNeighbor p{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
+    padding-left: 5rem;
+    padding-bottom: 5rem;
 }
