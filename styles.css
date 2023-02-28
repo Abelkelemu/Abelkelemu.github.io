@@ -107,6 +107,7 @@ a.checker {
 
 .description h1 {
     padding-bottom: 2rem;
+    color: blue;
 }
 .description p{
     font-size: 1.6rem;
@@ -116,10 +117,13 @@ a.checker {
     padding-bottom: 2rem;
 }
 
-.listOfClasses{
-    font-size: 1.6 rem;
-}
 
 .funFacts h1 {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    color: blue;
+}
+.funFacts p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
 }
