@@ -39,6 +39,7 @@ header{
     height: calc(100% - 30rem - 14rem);
     background-color:blanchedalmond;
 }
+
 ul {
     margin: 0;
     padding-left: 10rem;
@@ -47,7 +48,7 @@ ul {
 
 li{
     list-style-type: none ;
-    margin: 0;
+    margin: 2rem;
     padding: 0;
 }
 
@@ -83,6 +84,42 @@ footer{
 a.checker {
     background-color:darkgray
     
-
 }
 
+.aboutMePage{
+    margin: 0;
+    padding: 3rem;
+    background-color:blanchedalmond;
+}
+
+.happyImg{
+    width: 200px;
+    height: 200px;
+    padding: 3rem;
+    padding-left: 5rem;
+}
+
+.sadImg{
+    width: 200px;
+    height: 200px;
+    padding: 3rem;
+}
+
+.description h1 {
+    padding-bottom: 2rem;
+}
+.description p{
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+.listOfClasses h1 {
+    padding-bottom: 2rem;
+}
+
+.listOfClasses{
+    font-size: 1.6 rem;
+}
+
+.funFacts h1 {
+    padding-bottom: 2rem;
+}
