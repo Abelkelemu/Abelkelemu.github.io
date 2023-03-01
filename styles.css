@@ -38,14 +38,18 @@ header{
     height: calc(100% - 30rem - 14rem);
     background-color:blanchedalmond;
 }
-
+.homeNavs{
+    max-width: 1200px;
+    margin: auto;
+}
 .homeNavs ul {
-    margin: 0;
-    padding-left: 10rem;
-    padding-top: 1.5rem;
+     margin: auto;
+    /* padding-left: 10rem; */
+    padding-top: 4rem;
 }
 
 .homeNavs  li{
+    display: inline-block;
     list-style-type: none ;
     margin: 2rem;
     padding: 0;
@@ -55,7 +59,7 @@ header{
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     border: 1px solid blue;
     border-radius: 0.5rem;
     padding: 0.4rem ; 
@@ -74,13 +78,7 @@ footer{
     padding-top: 2rem;
     font-size: 1.7rem;
 }
-/* .checker{
-    border: none;
-} */
-/* a.checker {
-    background-color:darkgray
-    
-} */
+
 
 .aboutMePage{
     margin: 0;
@@ -125,8 +123,6 @@ button a:hover{
     font-size: 3.1rem;
 
 }
-
-
 
 .listOfClasses{
     margin: 2rem;
