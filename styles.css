@@ -162,6 +162,7 @@ button a:hover{
 
 .favs li a:hover{
     color: red;
+    text-decoration: underline;
 }
 
 
@@ -192,4 +193,22 @@ button a:hover{
     font-size: 2.4rem;
     padding-left: 5rem;
     padding-bottom: 5rem;
+}
+
+.aboutMePage p::first-letter{
+    font-size: 1.5em;
+}
+
+.favs ol{
+        transform: rotate(180deg);
+        margin: 0;
+    padding-right: 10rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.favs ol > li {
+    transform: rotate(-180deg);
+    padding: 1rem;
+    
 }
