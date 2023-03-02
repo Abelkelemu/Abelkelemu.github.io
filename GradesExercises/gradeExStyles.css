@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+
+html,
+body
+{
+  height: 100%;
+}
+
+.gradePage{
+    margin: 0;
+    height: calc(100% - 14rem);
+    background-color:blanchedalmond;
+    position: relative;
+}
+
+footer{
+    height: 14rem;
+    margin: 0;
+    background-color:darkgray
+}
+
+
+.footerContent{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+}
+
+.footerContent p{
+    margin: 0;
+    padding: 0;
+}
+
+.gradeForm{
+    border: 2px solid brown;
+    width: 40rem;
+   height: 40rem;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 20rem);
+    margin: auto; 
+    border-radius: 1rem;
+}
+
+.gradeForm h1{
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.inputContainer{
+    padding: 2.5rem;
+}
+
+.entry{
+    display: block;
+    width: 100%;
+}
+
+.inputContainer input{
+    font-size: 1rem;
+   
+    line-height: 1;
+    text-align: left;
+    padding: 8px 2px;
+    margin: 5px auto;
+    border: 1px solid #9e9e9e;
+    border-radius: .5rem;
+    outline: none;
+}
+.textField{
+    width: 22.1rem;
+}
+.inputContainer label{
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.inputContainer select{
+    margin: 1rem;  
+}
+
+.inputContainer .btn{
+    text-align: center;
+}
+
+.inputContainer button{
+    margin: 1rem;
+    background-color:darkorange;
+    width: 6rem;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+}
+.inputContainer button a{
+    
+    margin: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+    
+}
+.inputContainer .btn .submitBtn {
+    font-size: 1rem;
+    padding: 0.4rem 0rem;
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+    background-color:darkorange;
+    width: 6rem;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+}
+
+

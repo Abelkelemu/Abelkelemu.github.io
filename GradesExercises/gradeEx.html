@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Retrieve Grade</title>
+        <link rel="stylesheet" href="gradeExStyles.css">
+    </head>
+
+    <body>
+
+
+        <div class="gradePage">
+
+            <div class="gradeForm">
+                <h1>Retrieve your grade</h1>
+                <div class="inputContainer">
+                    <form action="http://mumstudents.org/params.php">
+                        <div class="entry">
+                            <label > First Name <input class="textField" type="text" name="firstName"> </label>
+                        </div>
+                        <div class="entry">
+                            <label > Last Name <input class="textField"  type="text" name="lastName"> </label>
+                        </div>
+                        <div class="entry">
+                            <label > Student ID <input class="textField"  type="text" name="studentID"> </label>
+                        </div>
+                        <div class="entry">
+                            <label>Please Choose Assignment
+                                <select name="assignmentName" >
+                                    <optgroup label="HomeWorks">
+                                        <option value="homeWork01">HomeWork01</option>
+                                        <option value="homeWork02">HomeWork02</option>
+                                        <option value="homeWork03">HomeWork03</option>
+                                        <option value="homeWork04">HomeWork04</option>
+                                    </optgroup>
+                                    <optgroup label="LabWorks">
+                                        <option value="labWork01">LabWork01</option>
+                                        <option value="labWork02">LabWork02</option>
+                                        <option value="labWork03">LabWork03</option>
+                                        <option value="labWork04">LabWork04</option>
+                                    </optgroup>
+    
+                                </select>
+                            </label>
+                           
+                        </div>
+
+                        <div class="entry">
+                            <label>
+                                Select your entry
+                                <label><input type="radio" name="entry" value="april">Apr</label>
+                                <label><input type="radio" name="entry" value="august">Aug</label>
+                                <label><input type="radio" name="entry" value="november">Nov</label>
+                                <label><input type="radio" name="entry" value="feburary">Feb</label>
+                            </label>
+                        </div>
+                        <div class="entry">
+                            <label><input type="checkbox" name="" id="">
+                                I agree to provide truthful and accurate information. Any false statements may result in denial of access or services.
+                            </label>
+                            
+                        </div>
+
+                        <div class="btn">
+                            <input class="submitBtn" type="submit">
+                                       
+                            <button><a href="../index.html">Back</a> </button>
+                        </div>
+                       
+                       
+                        
+
+                    </form>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+
+
+        <footer>
+            <div class = "footerContent">
+                <p>&copy; 2023  Abel K Dessalegne </p>
+                <p>Maharishi International University</p>
+                <p>1000 N 4th St., Fairfield, Iowa, 52557</p>
+                <p>Email: abelk.dessalegne@miu.edu</p>
+                <a class="checker"
+                
+                    href="https://validator.w3.org/nu/check/referer"> <img
+                    src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+                    alt="html validator">
+                </a>
+
+                <a class="checker"
+                    href="https://jigsaw.w3.org/css-validator/check/referer"> <img
+                    src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png"
+                    alt="css validator">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
