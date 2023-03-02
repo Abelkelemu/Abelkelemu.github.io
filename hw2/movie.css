@@ -88,6 +88,10 @@ body{
     margin-right: 5px;
 }
 
+.empty{
+    clear: left;
+}
+
 
 .rightSection dl{
     padding: 10px;
