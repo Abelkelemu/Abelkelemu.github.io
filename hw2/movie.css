@@ -52,7 +52,8 @@ body{
 }
 
 .contentBanner img{
-    padding-left: 15px;
+    padding-left: 2px;
+    border-top-left-radius: 17px;
 }
 
 .contentBanner span{
@@ -66,7 +67,8 @@ body{
 #columns{
     column-count: 2;
     column-gap: 2%;
-    margin: 11.2px;   
+    margin: 11.2px;  
+     
 }
 
 .review{
@@ -77,9 +79,14 @@ body{
     border-radius: 10px;
     padding: 8px;
     margin: 0;
-    height: 100%;
+    overflow: hidden;
+
 }
 
+.review img{
+    float: left;
+    padding-right: 2px;
+}
 .reviewer{
     margin-bottom: 20pt;
 }
@@ -87,6 +94,8 @@ body{
     float: left;
     margin-right: 5px;
 }
+
+
 
 .empty{
     clear: left;
