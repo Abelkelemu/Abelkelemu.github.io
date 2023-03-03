@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script> 
+
+        window.onload = function(){
+            var myString = "";
+            var myArray = JSON.parse(localStorage.getItem("TaskList"));
+            if(myArray){
+                for(var i=0 ; i<myArray.length;i++){
+                  myString += (i+1)+"."+ myArray[i] + "\n";
+                }
+            }
+            document.getElementById("output").value = myString;
+        }
+
+        function addTask(){
+            var newList = document.getElementById('task').value;
+            if (newList.trim() === "") {
+                return;
+            }
+            var myArray = JSON.parse(localStorage.getItem("TaskList"));
+            if(myArray){
+                myArray.push(newList);
+                localStorage.setItem("TaskList", JSON.stringify(myArray));
+            }
+            else{
+             var myArray = [];
+             myArray[0] =  newList;
+             localStorage.setItem("TaskList", JSON.stringify(myArray));
+            }
+            var myString = "";
+            for(var i=0 ; i<myArray.length;i++){
+                myString += (i+1)+"."+myArray[i] + "\n";
+            }
+           
+            document.getElementById("output").value = myString;
+            document.getElementById("task").value= null;
+        }
+
+        function clearTask(){   
+            localStorage.removeItem("TaskList");
+            document.getElementById("output").value= "";   
+        }
+        
+    </script>
+    <head>
+        <meta charset="utf-8">
+        <title>The Task List Application</title>
+        <link rel="stylesheet" href="./taskList.css">
+    </head>
+
+    <body>
+        <div class="mainContent">
+            <div class="container">
+                <h1>Task List</h1>
+                <div class="rightSection">
+                    <label>
+                        Task List
+                        <br>
+                        <textarea name="" id="output" cols="30" rows="5" disabled "></textarea>
+                    </label>
+                </div>
+                <div class="leftSection">
+                    
+                    <label>Task <br>
+                        <input type="text" id="task" required>
+                    </label>
+                    <br>
+                    <button onclick="addTask();">Add Task</button>
+                    <br>
+                    <button onClick="clearTask();">Clear Tasks</button>
+                    <br>
+                    <button> <a href="../index.html">Back to Home</a> </button>
+                </div>
+                    
+                
+            </div>
+        </div>
+        <footer>
+
+           
+            <div class = "footerContent">
+                <p>&copy; 2023  Abel K Dessalegne </p>
+                <p>Maharishi International University</p>
+                <p>1000 N 4th St., Fairfield, Iowa, 52557</p>
+                <p>Email: abelk.dessalegne@miu.edu</p>
+                <a class="checker"
+                
+                    href="https://validator.w3.org/nu/check/referer"> <img
+                    src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+                    alt="html validator">
+                </a>
+
+                <a class="checker"
+                    href="https://jigsaw.w3.org/css-validator/check/referer"> <img
+                    src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png"
+                    alt="css validator">
+                </a>
+            </div>
+        </footer>
+    </body>
+
+</html>

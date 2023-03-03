@@ -8,9 +8,16 @@
     
 function calcTip() {
 // Enter your code here to make Tip Calculator work
-    
-    let subtotal= parseFloat(document.getElementById("subtotal").value);
-    let tip = parseFloat(document.getElementById("tip").value);
+
+            
+    let subtotal= (document.getElementById("subtotal").value);
+    let tip = (document.getElementById("tip").value);
+    if (subtotal.trim() === "" || tip.trim() === "") {
+        return;
+    }
+    subtotal= parseFloat(subtotal);
+    tip = parseFloat(tip);
+
     let total =  subtotal + (subtotal * tip /100); 
     document.getElementById("total").innerHTML = '$'+total.toFixed(2);
 }
