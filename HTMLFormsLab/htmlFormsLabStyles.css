@@ -2,10 +2,17 @@ body{
     width: 400px;
     padding: 0;
     margin: 0 auto;
-    
+    background-color: whitesmoke;
 }
 html{
     font-size: 10px;
+
+    
+}
+html,
+body
+{
+  height: 100%;
 }
 
 h1,p,h3{
@@ -18,11 +25,7 @@ h1{
 h3{
     color:brown
 }
-html,
-body
-{
-  height: 100%;
-}
+
 
 header{
     height: 6rem;
@@ -78,6 +81,7 @@ label{
 
 input{
     margin-left: 10px;
+    
 }
 select{
     margin-left: 1rem;
