@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Retrieve Grade</title>
+        <link rel="stylesheet" href="htmlFormsLabStyles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>hey</h1>
+        </header>
+        <div class="mainContent">
+            <div class="signUpForm">
+                <fieldset>
+                    <legend>New User SignUp:</legend>
+                    <form action="http://mumstudents.org/params.php">
+                        <div class="entry">
+                            <label > Name: <input class="textField" type="text" name="name"> </label>
+                        </div>
+                        <div class="entry">
+                            <label>
+                                Gender:
+                                <label><input type="radio" name="gender" value="male">Male</label>
+                                <label><input type="radio" name="entry" value="august" checked>Female</label>
+                            </label>
+                        </div>
+                        <div class="entry">
+                            <label > Age: <input class="textField"  type="number" name="age"> </label>
+                        </div>
+                        <div class="entry">
+                            <label > Personality types: <input class="textField"  type="text" name="personalityTypes"> </label>
+                        </div>
+                        <div class="entry">
+                            <label>Favorite OS:
+                                <select name="favOS" >
+                                    
+                                        <option value="Windows" selected>Windows</option>
+                                        <option value="Mac OS X">Mac OS X</option>
+                                        <option value="Linux">Linux</option>
+                                    
+                                </select>
+                            </label>
+                           
+                        </div>
+                        <div class="entry">
+                            <label > Seeking age: <input class="textField" type="number" name="min">
+                                <span>to</span>
+                                <input class="textField" type="number" name="max">
+                             </label> 
+                        </div>
+                       
+                    
+
+                        <div class="btn">
+                            <input class="submitBtn" type="submit">
+                                       
+                          
+                        </div>
+                       
+                       
+                        
+
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                This page is for
+            </p>
+            <a href="../index.html">Back to front page</a>
+        </footer>
+    </body>
+</html>
