@@ -1,15 +1,22 @@
 body{
-    width: 700px;
+    width: 400px;
     padding: 0;
     margin: 0 auto;
+    
 }
 html{
     font-size: 10px;
 }
 
-h1,p{
+h1,p,h3{
     margin: 0;
     padding: 0;
+}
+h1{
+    color: gray;
+}
+h3{
+    color:brown
 }
 html,
 body
@@ -22,9 +29,72 @@ header{
 }
 
 footer{
-    height: 6rem;
+    height: 20rem;
+    font-size: 1.5rem;
 }
 
 .mainContent{
-    height: calc(100% - 6rem - 6rem);
+    height: calc(100% - 6rem - 20rem);
+    
 }
+
+fieldset{
+    background-color:lightblue;
+    border-radius: .5rem;
+    box-shadow: 1px 2px 5px gray;
+    padding: 1rem;
+
+    
+}
+
+legend{
+    border: 1.5px groove gray;
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 2px gray;
+    border-radius: 0.1rem;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+
+}
+
+.entry{
+    margin-bottom: 10px;
+}
+
+
+ a{
+    color: red;
+    word-spacing: 2px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input{
+    margin-left: 10px;
+}
+select{
+    margin-left: 1rem;
+}
+
+button{
+    font-weight: bold;
+    background-color: pink;
+    width: 8rem;
+    margin: 1rem;
+    border-radius: 3px;
+    padding: 3px;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.arrow{
+    font-size: 1.5rem;
+}
+
+
