@@ -36,13 +36,18 @@ function changeWord(){
     const text = document.getElementById('myTextArea').value;
     const words = text.split(' ');
    
+
+    // using replace 
+    let result = text.replace(/[a-zA-Z]{5,}/g,"Malkovich");
+    document.getElementById('myTextArea').value = result;
+   
     // using for loop
-    for(let i =0 ; i < words.length;i++){
-        if(words[i].length>=5){
-            words[i]="Malkovich";
-        }
-    }
-    document.getElementById('myTextArea').value = words.join(' ');
+    // for(let i =0 ; i < words.length;i++){
+    //     if(words[i].length>=5){
+    //         words[i]="Malkovich";
+    //     }
+    // }
+    // document.getElementById('myTextArea').value = words.join(' ');
 
      // using map
     //  const replaced = words.map(word => {
