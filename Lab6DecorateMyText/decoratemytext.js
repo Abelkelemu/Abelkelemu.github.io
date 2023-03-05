@@ -12,6 +12,27 @@ function pigLatin(){
     const words = text.split(' ');
     const vowels = ["a", "e", "i", "o", "u"];
     
+    //using replace
+    // let result = text.replace(/[a-zA-Z]{1,}/g, function(word){
+    //     const first = word[0].toLowerCase();
+    //     if(vowels.includes(first)){
+    //         return word + "ay";
+    //     }
+    //     else{
+    //         let pos =1;
+    //         for(let i = 1; i<word.length; i++){
+    //             if(vowels.includes(word[i])){
+    //                 break;
+    //             }
+    //             pos++;
+    //         }
+    //         const firstCluster = word.substring(0,pos);
+    //         return word.slice(pos) + firstCluster + "ay";
+    //     }
+    // });
+    // document.getElementById('myTextArea').value = result;
+
+// using map
     const edited = words.map((word) => {
         const first = word[0].toLowerCase();
         if(vowels.includes(first)){
@@ -37,11 +58,11 @@ function changeWord(){
     const words = text.split(' ');
    
 
-    // using replace 
+// using replace 
     let result = text.replace(/[a-zA-Z]{5,}/g,"Malkovich");
     document.getElementById('myTextArea').value = result;
    
-    // using for loop
+// using for loop
     // for(let i =0 ; i < words.length;i++){
     //     if(words[i].length>=5){
     //         words[i]="Malkovich";
@@ -49,7 +70,7 @@ function changeWord(){
     // }
     // document.getElementById('myTextArea').value = words.join(' ');
 
-     // using map
+// using map
     //  const replaced = words.map(word => {
     //     if (word.length >= 5) {
     //       return "Malkovich";
