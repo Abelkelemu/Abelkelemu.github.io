@@ -6,6 +6,7 @@ window.onload = function () {
     document.getElementById('pigLatin').onclick = pigLatin;
 };
 
+
 function pigLatin(){
     const text = document.getElementById('myTextArea').value;
     const words = text.split(' ');
