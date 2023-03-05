@@ -16,13 +16,13 @@ header{
    background-image: url("./Assets/headerBgImg.jpg") ;
    background-repeat: no-repeat;
    background-size: cover;
-   height: 30rem;
+   height: 25rem;
 }
 
 .profileImage{
-    padding: 2rem;
-    width: 20rem;
-    height: 20rem;
+    padding: 1.5rem;
+    width: 18rem;
+    height: 18rem;
     object-fit: cover;
     object-position: 100% 100%;
     border-radius: 50%;
@@ -30,12 +30,12 @@ header{
 
 .profileName{
     margin-left: 4rem;
-    font-size: 3rem;   
+    font-size: 2.5rem;   
 }
 
 .homePage{
     margin: 0;
-    height: calc(100% - 30rem - 14rem);
+    height: calc(100% - 25rem - 14rem);
     background-color:blanchedalmond;
 }
 .homeNavs{
@@ -45,7 +45,7 @@ header{
 .homeNavs ul {
      margin: auto;
     /* padding-left: 10rem; */
-    padding-top: 4rem;
+    padding-top: 1rem;
 }
 
 .homeNavs  li{
@@ -59,7 +59,7 @@ header{
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border: 1px solid blue;
     border-radius: 0.5rem;
     padding: 0.4rem ; 
