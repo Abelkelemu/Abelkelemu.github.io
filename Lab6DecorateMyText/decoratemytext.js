@@ -12,7 +12,7 @@ function pigLatin(){
     const words = text.split(' ');
     const vowels = ["a", "e", "i", "o", "u"];
     
-    //using replace
+//using replace
     // let result = text.replace(/[a-zA-Z]{1,}/g, function(word){
     //     const first = word[0].toLowerCase();
     //     if(vowels.includes(first)){
