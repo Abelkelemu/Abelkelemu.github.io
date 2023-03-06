@@ -1,0 +1,12 @@
+.container{
+    border-left: 2px solid grey;
+    padding: 2px;
+}
+
+label, button, textarea{
+    margin: 5px;
+}
+
+input{
+    margin: 2px;
+}
