@@ -5,7 +5,15 @@ $(document).ready( function(){
     var myString = [];
     var started = false;
   
-
+    if(!started){
+        $("#stop").prop("disabled",true);
+    }
+    // $("#animations").change(function(){
+    //     if($("#animations").val()=="Custom"){
+    //         stop();
+    //     }
+        
+    // })
     $("#start").click(start);
     $('#stop').click(stop);
     $("#textarea").change(function(){
@@ -35,6 +43,8 @@ $(document).ready( function(){
     function start(){
         
         $("#textarea").prop("disabled", true);
+        $("#start").prop("disabled",true);
+        $("#stop").prop("disabled",false);
         started = true;
         clearInterval(intervalId);
         for(let i =0; i<myString.length;i++){
@@ -59,13 +69,13 @@ $(document).ready( function(){
    function stop(){
         started = false;
         $("#textarea").prop("disabled", false);
+        $("#start").prop("disabled",false);
+        $("#stop").prop("disabled",true);
         clearInterval(intervalId);
         for(let i =0; i<myString.length;i++){
             clearTimeout(timeoutId[i]);
         }
         $("#textarea").val(ANIMATIONS[$("#animations").val()]);
-
    }
-
 });
 
