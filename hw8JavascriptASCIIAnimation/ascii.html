@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>CS472: ASCII Animation Viewer</title>
+        <link rel="stylesheet" href="./ascii.css">
         <script src="../jquery-3.6.3.js"></script>
         <script src="animations.js"></script>
         <script src="ascii.js"></script>
@@ -11,6 +12,48 @@
       
     </head>
     <body>
-        <p>It is what it is! </p>
+        <h1>CSE 190 M ASCII Animation Viewer</h1>
+        <div  class="textBox">
+            <textarea name="" id="textarea" cols="80" rows="20"></textarea>
+        </div>
+        <div class="controllers">
+            <fieldset>
+                <legend>Play Controls:</legend>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+            </fieldset>
+            <fieldset>
+                <legend>Animation:</legend>
+                <select name="" id="animations">
+                    <option value="Blank" selected>Blank</option>
+                    <option value="Exercise">Exercise</option>
+                    <option value="Juggler">Juggler</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Dive">Dive</option>
+                    <option value="Custom">Custom</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Size:</legend>
+                <select name="" id="size">
+                    <option value="7pt">Tiny</option>
+                    <option value="10pt">Small</option>
+                    <option value="12pt" selected>Medium</option>
+                    <option value="16pt">Large</option>
+                    <option value="24pt">Extra Large</option>
+                    <option value="32pt">XXL</option>
+
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Speed:</legend>
+                <label><input type="checkbox" name="" id="speed" value="50"> Turbo</label>
+            </fieldset>
+            
+        </div>
+        <h4>Note: </h4>
+        <h4>Please stop the animation to enable the text box for custom use</h4>
+        <h4>For custom use input format please refer the format for the other types of animations from the text box</h4>
+        <h4>You may copy and paste from one of the animation types to  try the Custom feature </h4>
     </body>
 </html>
