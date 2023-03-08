@@ -4,7 +4,16 @@ body{
     font-size: 14pt;
     font-weight: bold;
 }
-
+.emoji{
+    float: left;
+    color: red;
+}
+.validators{
+    float: right;
+}
+.validators a{
+    display: block;
+}
 h1{
     font-size: 32pt;
     font-weight: bold;

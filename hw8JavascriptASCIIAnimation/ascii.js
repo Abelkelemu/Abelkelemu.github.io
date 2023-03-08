@@ -1,26 +1,17 @@
+"use strict";
 $(document).ready( function(){
     var speed= 250;
     var intervalId;
     var timeoutId = [];
     var myString = [];
     var started = false;
-  
     if(!started){
         $("#stop").prop("disabled",true);
     }
-    // $("#animations").change(function(){
-    //     if($("#animations").val()=="Custom"){
-    //         stop();
-    //     }
-        
-    // })
     $("#start").click(start);
     $('#stop').click(stop);
     $("#textarea").change(function(){
-        if($("#animations").val()=="Custom"){
-            ANIMATIONS['Custom'] = $("#textarea").val().replace(/\r?\n/g, '\n');
-        }
-        console.log(ANIMATIONS['Custom']);
+            ANIMATIONS[$("#animations").val()] = $("#textarea").val().replace(/\r?\n/g, '\n'); 
     });
     $("#animations, #size, #speed").change(function(){
         $("#textarea").css('font-size',$('#size').val())
@@ -30,8 +21,6 @@ $(document).ready( function(){
         else{
             speed = 250;
         }
-       
-       
         if(started){
             start();
         }
@@ -39,12 +28,12 @@ $(document).ready( function(){
             $("#textarea").val(ANIMATIONS[$("#animations").val()]);
         }
     });
-
+    
     function start(){
-        
         $("#textarea").prop("disabled", true);
         $("#start").prop("disabled",true);
         $("#stop").prop("disabled",false);
+        $("#animations").prop("disabled",true);
         started = true;
         clearInterval(intervalId);
         for(let i =0; i<myString.length;i++){
@@ -68,6 +57,7 @@ $(document).ready( function(){
 
    function stop(){
         started = false;
+        $("#animations").prop("disabled",false);
         $("#textarea").prop("disabled", false);
         $("#start").prop("disabled",false);
         $("#stop").prop("disabled",true);
