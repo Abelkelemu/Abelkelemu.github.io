@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="simpleCalculator.css">
+    <meta charset="UTF-8">
+    <title>SimplerCalculator Website</title>
+</head>
+    <body>
+        <div>
+            <form action="/calculate" method="post">
+            <fieldset>
+                <legend>Simple Calculator</legend>
+                <p>Please enter two numbers and choose an operation.</p>
+              
+                
+                    <input type="text" name="first" required>
+                    <input type="text" name="second" required>
+                    <select name="operation" id="">
+                        <option value="add" selected>Add</option>
+                        <option value="subtract">Substract</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="divide">Divide</option>
+                    </select>
+                    <input type="submit" value="Click">
+                
+            </fieldset>
+        </form>
+        </div>
+    </body>
+</html>

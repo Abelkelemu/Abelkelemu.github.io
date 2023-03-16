@@ -1,0 +1,17 @@
+{
+  "name": "simplecalculatorlab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CalculatorWebServer.js",
+  "scripts": {
+    "start" : "nodemon CalculatorWebServer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}

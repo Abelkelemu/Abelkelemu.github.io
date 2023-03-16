@@ -1,0 +1,18 @@
+fieldset{
+    background-color: antiquewhite;
+    padding: 30px;
+    
+}
+
+legend{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+div{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    top: 20%;
+    
+}
