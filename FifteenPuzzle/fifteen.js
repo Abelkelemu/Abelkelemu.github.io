@@ -12,27 +12,27 @@ $(document).ready( function(){
     $(".puzzlepiece").click(move);
     highlightMovable();
 // to initialize the puzzle
-     function init() {
-        var puzzleArea = document.getElementById('puzzlearea');
-        var divs = puzzleArea.getElementsByTagName("div");  
+    function init() {
+        var puzzleArea = $("#puzzlearea");
+        var divs = puzzleArea.children();
         // initialize each piece
-        for (var i=0; i< divs.length; i++) {
-            var div = divs[i];
+        divs.each(function(i, div) {
             // calculate x and y for this piece
-            var x = ((i % 4) * 100) ;
-            var y = (Math.floor(i / 4) * 100) ;
+            var x = (i % 4) * 100;
+            var y = Math.floor(i / 4) * 100;
             // set basic style and background
-            div.className = "puzzlepiece";
-            div.style.left = x + 'px';
-            div.style.top = y + 'px';
-            div.style.backgroundImage = 'url("background.jpg")';
-            div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
-            // store x and y for later
-            div.x = x;
-            div.y = y; 
-            div.id = "square_"+ x + "_"+y;
-        }        
-    };
+            $(div).addClass("puzzlepiece").css({
+                "left": x + "px",
+                "top": y + "px",
+                "background-image": 'url("background.jpg")',
+                "background-position": -x + "px " + -y + "px"
+            }).attr({
+                "x": x,
+                "y": y,
+                "id": "square_" + x + "_" + y
+            });
+        });
+    }
 
 // to check if a piece is movable
 function checkMove(piece){
@@ -88,7 +88,6 @@ function highlightMovable(){
         var pieceId = "square_"+ x + "_"+ y;
         return document.getElementById(pieceId);
     }
-
 // to shuffle the puzzle
     function shuffle (){
         for(let i =0 ; i<1000; i++){
