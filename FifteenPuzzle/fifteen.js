@@ -26,11 +26,10 @@ $(document).ready( function(){
                 "top": y + "px",
                 "background-image": 'url("background.jpg")',
                 "background-position": -x + "px " + -y + "px"
-            }).attr({
-                "x": x,
-                "y": y,
-                "id": "square_" + x + "_" + y
-            });
+            })
+            .attr("id", "square_" + x + "_" + y)
+            .data("x", x)
+            .data("y", y);
         });
     }
 
