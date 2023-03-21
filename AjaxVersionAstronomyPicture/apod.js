@@ -19,6 +19,5 @@ function showPicture(data) {
     $("#title").html(data.title)
 };
 function noPicture(error) {
-    console.log(error);
     alert(error.responseText);
 };
